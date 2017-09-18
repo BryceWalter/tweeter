@@ -1,0 +1,27 @@
+section.new-tweet {
+    margin-top: 100px;
+    padding: 1em;
+    padding-top: 0;
+    background-color: #eeeeee;
+    border: 1px solid #cecece;
+    border-radius: 10px;
+}
+
+textarea {
+    overflow: auto;
+    padding: 0.5em;
+    width: -webkit-fill-available;
+    margin: auto;
+}
+
+.new-tweet h2 {
+    border-bottom: 1px solid #000000;
+}
+
+span.counter {
+  float: right;
+}
+
+.text-too-long {
+  color: red;
+}

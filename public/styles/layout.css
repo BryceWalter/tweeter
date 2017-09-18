@@ -18,8 +18,39 @@ body {
   margin: 0;
   color: #244751;
   background-color: #eee;
+  font-family: 'Roboto Condensed', sans-serif;
 }
-
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+#nav-bar {
+  display: block;
+  background-color: #00a087;
+  color:  #e8fdff;
+  position: fixed;
+  right: 0;
+  left: 0;
+  padding: 0 2em;
+  height: 80px;
+}
+
+#nav-bar .logo {
+  float: left;
+  height: 80px;
+  width: 80px;
+}
+
+#nav-bar .header {
+  float: left;
+  font-size: 2em;
+  margin-left: 10px;
+  line-height: 2.5em;
+}
+
+main.container {
+    width: 450px;
+    background-color: white;
+    margin: auto;
+    padding: 1em;
+}
