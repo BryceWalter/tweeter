@@ -66,6 +66,7 @@ main.container {
   height: 220px;
   border: 1px solid #cecece;
   border-radius: 10px;
+  margin-bottom: 2em;
 }
 
 .tweet:hover {
@@ -125,13 +126,15 @@ main.container {
   font-weight: 300;
 }
 
-.hidden {
-  display: none;
-}
-
-#buttons {
+.buttons {
   float: right;
   padding: 0.5em;
+  display: inline-block;
+  visibility: hidden;
+}
+
+.tweet:hover .buttons{
+  visibility:  visible;
 }
 
 .tweet footer .flag {
