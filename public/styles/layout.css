@@ -54,3 +54,107 @@ main.container {
     margin: auto;
     padding: 1em;
 }
+
+/*######################################### Tweet Log and Tweets ###################################*/
+
+#tweet-log {
+  margin: auto;
+  margin-top: 50px;
+}
+
+.tweet {
+  height: 220px;
+  border: 1px solid #cecece;
+  border-radius: 10px;
+}
+
+.tweet:hover {
+  border: 1px solid #5d5d5d;
+}
+
+/* #### HEADER #### */
+
+.tweet header {
+  height: 80px;
+  background-color: #eeeeee;
+  border-radius: 10px 10px 0 0;
+  padding: 0.5em;
+}
+
+.tweet header img {
+  float: left;
+  border-radius: 5px;
+}
+
+.tweet header h2 {
+  float: left;
+  margin-left: 0.3em;
+  line-height: 0em;
+  color: #244751;
+}
+
+.tweet header h5 {
+  float: right;
+  line-height: 0em;
+  color: #767676;
+  font-weight: 300;
+}
+
+/* #### TWEET BODY #### */
+.tweet div {
+  height: 80px;
+}
+
+.tweet div p {
+  padding: 0.1em 1em;
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+
+
+/* #### FOOTER #### */
+
+.tweet footer {
+  border-top: 1px solid #cecece;
+}
+
+.tweet footer p {
+  float: left;
+  font-size: 0.8em;
+  padding-left: 0.5em;
+  font-weight: 300;
+}
+
+.hidden {
+  display: none;
+}
+
+#buttons {
+  float: right;
+  padding: 0.5em;
+}
+
+.tweet footer .flag {
+  padding-right: 0.4em;
+  fill: #66C5B7;
+}
+
+.tweet footer .retweet {
+  padding-right: 0.4em;
+  padding-bottom: 0.3em;
+}
+
+.tweet footer .favourite {
+  padding-bottom: 0.2em;
+}
+
+
+
+
+
+
+
+
+
+
+
