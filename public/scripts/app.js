@@ -8,6 +8,10 @@
 $(document).ready(function() {
 // Test / driver code (temporary). Eventually will get this from the server.
 // ########## FUNCTIONS
+  $('.compose-new').on('click', function(){
+    $('.new-tweet').slideToggle()
+
+  })
 
   function createTweetElement(tweet) {
     return $(`<article class="tweet">
@@ -53,6 +57,7 @@ $(document).ready(function() {
   $form.on('submit', function(event){
     event.preventDefault()
     var tweetInput = $form.serialize()
+
     if ($('form > textarea').val() === '') {
       $('#error-message').empty()
       $('#error-message').text('Nothing to tweet!')
@@ -63,12 +68,12 @@ $(document).ready(function() {
 
     } else {
       $('#error-message').empty()
-      $('tweet-log').empty()
       $.ajax({
         url: "/tweets",
         method: "POST",
         data: tweetInput
       })
+    $('#tweet-log').empty()
     loadTweets()
     }
   })
