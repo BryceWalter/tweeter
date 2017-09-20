@@ -10,7 +10,7 @@ $(document).ready(function() {
 // ########## FUNCTIONS
   $('.compose-new').on('click', function(){
     $('.new-tweet').slideToggle()
-
+    $('form > textarea').focus()
   })
 
   function createTweetElement(tweet) {
@@ -52,6 +52,8 @@ $(document).ready(function() {
     })
   }
 
+  loadTweets()
+
 // ########## EVENT HANDLERS
   var $form = $('.tweet-input')
   $form.on('submit', function(event){
@@ -72,9 +74,10 @@ $(document).ready(function() {
         url: "/tweets",
         method: "POST",
         data: tweetInput
+      }).done(function (){
+        $('#tweet-log').empty()
+        loadTweets()
       })
-    $('#tweet-log').empty()
-    loadTweets()
     }
   })
 
