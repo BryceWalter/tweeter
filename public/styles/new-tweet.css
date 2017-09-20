@@ -25,3 +25,11 @@ span.counter {
 .text-too-long {
   color: red;
 }
+
+#error-message {
+    color: red;
+    margin: 1em;
+    margin-right: 5em;
+    float: right;
+    line-height: 0.2em;
+}

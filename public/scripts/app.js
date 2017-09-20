@@ -53,13 +53,24 @@ $(document).ready(function() {
   $form.on('submit', function(event){
     event.preventDefault()
     var tweetInput = $form.serialize()
-    $.ajax({
-      url: "/tweets",
-      method: "POST",
-      data: tweetInput
-    })
+    if ($('form > textarea').val() === '') {
+      $('#error-message').empty()
+      $('#error-message').text('Nothing to tweet!')
 
+    } else if ($('form > textarea').val().length > 140) {
+      $('#error-message').empty()
+      $('#error-message').text('Please enter less than 140 characters.')
+
+    } else {
+      $('#error-message').empty()
+      $('tweet-log').empty()
+      $.ajax({
+        url: "/tweets",
+        method: "POST",
+        data: tweetInput
+      })
     loadTweets()
+    }
   })
 
 
