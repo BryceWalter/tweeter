@@ -70,6 +70,9 @@ $(document).ready(function() {
         method: "POST",
         data: tweetInput
       }).done(function (){
+        $form.each(function(){
+          this.reset();
+        });
         $('#tweet-log').empty()
         loadTweets()
       })
