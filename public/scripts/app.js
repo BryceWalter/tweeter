@@ -6,32 +6,26 @@
 
 
 $(document).ready(function() {
-// Test / driver code (temporary). Eventually will get this from the server.
 // ########## FUNCTIONS
-  $('.compose-new').on('click', function(){
-    $('.new-tweet').slideToggle()
-    $('form > textarea').focus()
-  })
-
   function createTweetElement(tweet) {
     return $(`<article class="tweet">
-                  <header>
-                    <img class="profile-photo" src="${tweet.user.avatars.small}" width="50px" height="50px">
-                    <h2 class='username'>${tweet.user.name}</h2>
-                    <h5>${tweet.user.handle}</h5>
-                  </header>
+              <header>
+                <img class="profile-photo" src="${tweet.user.avatars.small}" width="50px" height="50px">
+                <h2 class='username'>${tweet.user.name}</h2>
+                <h5>${tweet.user.handle}</h5>
+              </header>
 
-                  <div class="tweet-body"><p></p></div>
+              <div class="tweet-body"><p></p></div>
 
-                  <footer>
-                    <p>${moment(tweet.created_at).fromNow()}</p>
-                    <div class="buttons">
-                      <i id="flag" class="fa fa-flag"></i>
-                      <i id="retweet" class="fa fa-retweet" aria-hidden="true"></i>
-                      <i id="favourite" class="fa fa-heart" aria-hidden="true"></i>
-                    </div>
-                  </footer>
-                </article>`)
+              <footer>
+                <p>${moment(tweet.created_at).fromNow()}</p>
+                <div class="buttons">
+                <i id="flag" class="fa fa-flag"></i>
+                <i id="retweet" class="fa fa-retweet" aria-hidden="true"></i>
+                <i class="fa fa-heart like" aria-hidden="true"></i>
+                </div>
+              </footer>
+            </article>`)
   }
 
   function renderTweets(tweets) {
@@ -55,6 +49,7 @@ $(document).ready(function() {
   loadTweets()
 
 // ########## EVENT HANDLERS
+  //Handle posting and errors
   var $form = $('.tweet-input')
   $form.on('submit', function(event){
     event.preventDefault()
@@ -81,11 +76,11 @@ $(document).ready(function() {
     }
   })
 
+  //Compose button
+  $('.compose-new').on('click', function(){
+    $('.new-tweet').slideToggle()
+    $('form > textarea').focus()
+  })
 
-
-
-  // Test / driver code (temporary)
-   // to see what it looks like
-   // to add it to the page so we can make sure it's got all the right elements, classes, etc.
 
 })

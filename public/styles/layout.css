@@ -146,6 +146,7 @@ main.container {
 .buttons {
   float: right;
   padding: 0.5em;
+  padding-top: 0.7em;
   display: inline-block;
   visibility: hidden;
 }
@@ -173,15 +174,13 @@ main.container {
   color: #17BF63;
 }
 
-#favourite {
+.like {
   color: #576672
 }
 
-#favourite:hover {
+.like:hover {
   color: #E12962;
 }
-
-
 
 
 
