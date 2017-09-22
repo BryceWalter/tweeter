@@ -154,20 +154,32 @@ main.container {
   visibility:  visible;
 }
 
-.tweet footer .flag {
+#flag {
   padding-right: 0.4em;
-  fill: #66C5B7;
+  color: #576672
 }
 
-.tweet footer .retweet {
+#flag:hover {
+  color: #1C94E0;
+}
+
+#retweet {
   padding-right: 0.4em;
   padding-bottom: 0.3em;
+  color: #576672
 }
 
-.tweet footer .favourite {
-  padding-bottom: 0.2em;
+#retweet:hover{
+  color: #17BF63;
 }
 
+#favourite {
+  color: #576672
+}
+
+#favourite:hover {
+  color: #E12962;
+}
 
 
 

@@ -26,9 +26,9 @@ $(document).ready(function() {
                   <footer>
                     <p>${moment(tweet.created_at).fromNow()}</p>
                     <div class="buttons">
-                      <img class="flag" src="/images/flag.png" />
-                      <img class="retweet" src="/images/retweet.png"  />
-                      <img class="favourite" src="/images/heart.png" />
+                      <i id="flag" class="fa fa-flag"></i>
+                      <i id="retweet" class="fa fa-retweet" aria-hidden="true"></i>
+                      <i id="favourite" class="fa fa-heart" aria-hidden="true"></i>
                     </div>
                   </footer>
                 </article>`)
