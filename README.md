@@ -5,7 +5,7 @@ Tweeter is a simple, single-page Twitter clone. Tweet away.
 ## Project Description
 
 !["Tweets listed with compose box hidden."](https://github.com/BryceWalter/tweeter/blob/master/docs/hidden_compose.png)
-!["Tweets and compose box both shown."](tweeter/docs/show_compose.png)
+!["Tweets and compose box both shown."](https://github.com/BryceWalter/tweeter/blob/master/docs/show_compose.png)
 
 ## Getting Started
 
