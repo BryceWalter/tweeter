@@ -2,6 +2,8 @@
 
 Tweeter is a simple, single-page Twitter clone. Tweet away.
 
+Also available on Heroku: (https://tweetercloned.herokuapp.com)
+
 ## Project Description
 
 !["Tweets listed with compose box hidden."](https://github.com/BryceWalter/tweeter/blob/master/docs/hidden_compose.png)
